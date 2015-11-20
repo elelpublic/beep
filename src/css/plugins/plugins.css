@@ -1,0 +1,62 @@
+/*
+	==============================
+         * Checkbox, Radio *
+	==============================
+*/
+input[type=checkbox],input[type=radio] {
+    display: none;
+}
+
+input[type=checkbox]+label,input[type=radio]+label {
+    display: inline-block;
+    font-weight: 400;
+    cursor: pointer;
+    padding-left: 26px;
+    background-image: url(/chat/images/icons/sprite-forms.png);
+    background-repeat: no-repeat;
+    background-position: 0 -1px;
+}
+
+input[type=radio]+label {
+    background-position: 0 -99px;
+}
+
+input[type=checkbox]+label:hover {
+    background-position: 0 -20px;
+}
+
+input[type=radio]+label:hover {
+    background-position: 0 -119px;
+}
+
+input[type=checkbox]:checked+label {
+    background-position: 0 -39px;
+}
+
+input[type=radio]:checked+label {
+    background-position: 0 -139px;
+}
+
+input[type=checkbox][disabled]+label {
+    background-position: 0 -58px;
+    color: #888;
+    cursor: default;
+}
+
+input[type=radio][disabled]+label {
+    background-position: 0 -159px;
+    color: #353535;
+    cursor: default;
+}
+
+input[type=checkbox][disabled]:checked+label {
+    background-position: 0 -78px;
+    color: #353535;
+    cursor: default;
+}
+
+input[type=radio][disabled]:checked+label {
+    background-position: 0 -180px;
+    color: #353535;
+    cursor: default;
+}
